@@ -17,24 +17,24 @@ Use [DuckDuckGo](https://duckduckgo.com/) or your preferred search engine along 
 1. Describe what is unidirectional data flow.
 
    ```
-   Please write your answer here.
+   The idea is that data has only one way to go from one section of the app to another. With React this is done in a 3 point cycle. State which sets up View. View granting ability to make Actions. Actions can force a updating of the State. updated State now sets up the View.
    ```
 
 2. What does it mean to have a single source of truth for data?
 
    ```
-   Please write your answer here.
+   essentially it means a parent component is passing both data down and update state functions to one or multiple child components so they can act upon data changes and update the state
    ```
 
 3. What is the limitation of inverse data flow?
 
    ```
-   Please write your answer here.
+   Data is only capable of passing down and up components with a direct relationship e.g. parent to child and child to granchild. Siblings are not able to receive this data flow.
    ```
 
 4. Why is it a good practice to separate container and representational components?
    ```
-   Please write your answer here.
+   It is always useful to have a separation of concerns. You are in a manner of speaking dividing up the code for the UI and the code to make things work.
    ```
 
 ### Response Guidelines
